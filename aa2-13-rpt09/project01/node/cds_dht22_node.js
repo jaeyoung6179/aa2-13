@@ -37,7 +37,6 @@ parser.on("data", (data) => {
   firstcommaidx = readData.indexOf(",");
   secondcommaidx = readData.indexOf(",", firstcommaidx + 1);
   if (readData.lastIndexOf(",") > firstcommaidx && firstcommaidx > 0) {
-    name = readData.substring(0, firstcommaidx);
     temp = readData.substring(
         firstcommaidx + 1 ,
         readData.indexOf(",", firstcommaidx+ 1)
